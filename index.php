@@ -4,6 +4,10 @@
  *
  * When nothing else fits, use this.
  *
+ * @package FiveThree
+ * @license GPLv3+
+ * @author Shelley V. Adams
+ * @version 0.0.1
  * @since Five Three 0.0.1
  */
 ?>

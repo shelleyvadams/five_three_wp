@@ -2,13 +2,18 @@
 /**
  * Five Three function defintions, customization options, actions, etc.
  *
+ * @package FiveThree
+ * @author Shelley V. Adams
+ * @version 0.0.1
  * @since Five Three 0.0.1
-*/
+ */
 
 
 
 /**
  * Add support for theme features
+ * @author Shelley V. Adams
+ * @since Five Three 0.0.1
  */
 function add_feature_supports() {
 	add_theme_support( 'html5', array( 'search-form' ) );
@@ -20,6 +25,8 @@ add_action( 'after_setup_theme', 'add_feature_supports' );
 
 /**
  * Setup site navigation.
+ * @author Shelley V. Adams
+ * @since Five Three 0.0.1
  */
 function add_site_menu() {
 	register_nav_menu( 'primary', __( 'Primary Navigation', 'five-three' ) );
@@ -31,6 +38,8 @@ add_action( 'after_setup_theme', 'add_site_menu' );
 
 /**
  * Setup widget areas.
+ * @author Shelley V. Adams
+ * @since Five Three 0.0.1
  */
 function add_widget_areas() {
 	register_sidebar( array(

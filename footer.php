@@ -7,9 +7,14 @@
  * with links to WordPress and the URL for the current theme.
  * Finally, calls wp_footer and ends the document.
  *
+ * @package FiveThree
+ * @license GPLv3+
+ * @author Shelley V. Adams
+ * @version 0.0.1
  * @since Five Three 0.0.1
 */
 ?>
+
 	<footer id="site_footer">
 		<?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('footer')) : else : ?>
 			<?php $theme = wp_get_theme(); ?>
