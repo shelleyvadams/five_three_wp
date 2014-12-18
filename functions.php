@@ -12,6 +12,20 @@
 
 
 /**
+ * Add styles and scripts.
+ * @author Shelley V. Adams
+ * @since Five Three 0.0.1
+ */
+function add_styles_scripts() {
+	wp_register_style( 'general-styles', get_stylesheet_uri() );
+	wp_enqueue_style( 'general-styles' );
+}
+
+add_action( 'wp_enqueue_scripts', 'add_styles_scripts' );
+
+
+
+/**
  * Add support for theme features
  * @author Shelley V. Adams
  * @since Five Three 0.0.1
