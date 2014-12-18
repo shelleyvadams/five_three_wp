@@ -3,6 +3,7 @@
  * Five Three function defintions, customization options, actions, etc.
  *
  * @package FiveThree
+ * @license GPLv3+
  * @author Shelley V. Adams
  * @version 0.0.1
  * @since Five Three 0.0.1
@@ -17,6 +18,7 @@
  */
 function add_feature_supports() {
 	add_theme_support( 'html5', array( 'search-form' ) );
+	add_theme_support( 'automatic-feed-links' ); 
 }
 
 add_action( 'after_setup_theme', 'add_feature_supports' );
